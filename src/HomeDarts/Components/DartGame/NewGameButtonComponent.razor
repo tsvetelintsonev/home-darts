@@ -1,0 +1,13 @@
+<MudButton @onclick="OpenDialog" Variant="Variant.Filled" Color="Color.Primary">
+    New 501 Game
+</MudButton>
+
+@code {
+    [Inject] IDialogService DialogService { get; set; }
+
+    private void OpenDialog()
+    {
+		var options = new DialogOptions() { CloseButton = true };
+        DialogService.Show<AddPlayerDialogComponent>("New 501 Game", options);
+    }
+}

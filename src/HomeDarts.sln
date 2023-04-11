@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeDarts.Domain", "HomeDarts.Domain\HomeDarts.Domain.csproj", "{9C8067F0-E9BF-41CD-87BB-48D3DCEDAA32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeDarts", "HomeDarts\HomeDarts.csproj", "{3D55E054-8BD5-48E2-83B2-81D27655D535}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DartsDetection", "DartsDetection\DartsDetection.csproj", "{B9E9E0C9-CDDF-4377-8CBC-647111397C3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C8067F0-E9BF-41CD-87BB-48D3DCEDAA32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C8067F0-E9BF-41CD-87BB-48D3DCEDAA32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C8067F0-E9BF-41CD-87BB-48D3DCEDAA32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C8067F0-E9BF-41CD-87BB-48D3DCEDAA32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D55E054-8BD5-48E2-83B2-81D27655D535}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D55E054-8BD5-48E2-83B2-81D27655D535}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D55E054-8BD5-48E2-83B2-81D27655D535}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D55E054-8BD5-48E2-83B2-81D27655D535}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9E9E0C9-CDDF-4377-8CBC-647111397C3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9E9E0C9-CDDF-4377-8CBC-647111397C3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9E9E0C9-CDDF-4377-8CBC-647111397C3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9E9E0C9-CDDF-4377-8CBC-647111397C3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

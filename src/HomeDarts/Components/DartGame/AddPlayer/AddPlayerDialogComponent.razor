@@ -1,0 +1,63 @@
+@using HomeDarts.Domain
+@using HomeDarts.Domain.Stores
+
+<MudDialog>
+    <DialogContent>
+        <div class="field-with-button">
+            <MudTextField @bind-Value="@_playerName" Label="Player Name" Variant="Variant.Text"></MudTextField>
+            <MudButton @onclick="AddPlayer" Variant="Variant.Filled" Color="Color.Primary">
+                Add Player
+            </MudButton>
+        </div>
+        @if (_playerNames.Any())
+        {
+            <MudList>
+                @foreach (var playerName in _playerNames)
+                {
+                    <div class="d-flex align-center">
+                        <MudIcon Size="Size.Small" Icon="@Icons.Material.Filled.Close" @onclick="(() => RemovePayer(playerName))" Style="cursor: pointer"></MudIcon>
+                        <MudListItem Dense="true" Text="@playerName" Style="flex: 0"/>
+                    </div>
+                }
+            </MudList>
+        }
+    </DialogContent>
+    <DialogActions>
+        <MudButton @onclick="StartNewGame" Variant="Variant.Filled" Color="Color.Primary" Class="start-new-game-button">
+            Start New Game
+        </MudButton>
+    </DialogActions>
+</MudDialog>
+
+@code {
+
+    [CascadingParameter] MudDialogInstance MudDialog { get; set; }
+    [Inject] DartsGameStore Store { get; set; }
+
+    private string _playerName { get; set; }
+    private List<string> _playerNames { get; set; } = new ();
+
+    private void AddPlayer()
+    {
+        if (string.IsNullOrWhiteSpace(_playerName))
+        {
+            return;
+        }
+        
+        _playerNames.Add(_playerName);
+        _playerName = string.Empty;
+    }
+
+    private void RemovePayer(string playerName) => _playerNames.Remove(playerName);
+
+    private void StartNewGame()
+    {
+        if (!_playerNames.Any())
+        {
+            return;
+        }
+
+        Store.StartNewGame(_playerNames);
+        MudDialog.Close(DialogResult.Ok(true));
+    }
+}

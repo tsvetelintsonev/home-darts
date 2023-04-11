@@ -1,0 +1,53 @@
+@using HomeDarts.Domain
+@using HomeDarts.Domain.Stores
+
+<div class="d-flex flex-column player-cards">
+@foreach (var player in _players)
+{
+    <InactivePlayerComponent Player="player"></InactivePlayerComponent>
+    <div class="player-card">
+    <MudCard Class="@GetCssClass(player)" Elevation="0" Outlined="false" Square="true">
+        <MudCardHeader>
+            <CardHeaderContent>
+                <div class="player-card-header-content">
+                    @if (player.MyTurn)
+                    {
+                        <img class="player-card-player-active-icon" src="accuracy-50x50.png" alt="Accuracy"/>
+                    }
+                    <MudText Typo="Typo.h6" Align="Align.Center">@player.Name</MudText>
+                </div>
+            </CardHeaderContent>
+        </MudCardHeader>
+        <MudCardContent>
+            <MudText Typo="Typo.h5" Align="Align.Center" style="font-weight: 500">@player.RemainingPoints.ToString()</MudText>
+        </MudCardContent>
+        <MudCardActions>
+            @if (player.HavePossibleCheckout())
+            {
+                <MudText Typo="Typo.h5" Align="Align.Center">Checkout: T20 D16 10</MudText>
+            }
+        </MudCardActions>
+    </MudCard>
+</div>
+}
+</div>
+
+@code {
+    [Inject] private DartsGameStore Store { get; set; }
+    
+    private List<Player> _players { get; set; }
+    
+    protected override async Task OnInitializedAsync()
+    {
+        Store.Players.Subscribe(players =>
+        {
+            _players = players;
+            StateHasChanged();
+        });
+        await Task.CompletedTask;
+    }
+
+    private string GetCssClass(Player player)
+        => player.MyTurn ? "player-card-player-active" : string.Empty;
+
+}

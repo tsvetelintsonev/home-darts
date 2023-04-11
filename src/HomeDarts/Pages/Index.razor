@@ -1,0 +1,23 @@
+﻿@page "/"
+@using HomeDarts.Domain
+@using HomeDarts.Domain.Stores
+@using Microsoft.Extensions.Logging
+
+<PageTitle>New 501 Game</PageTitle>
+
+<PlayersComponent></PlayersComponent>
+<div class="d-flex flex-column flex-wrap align-center" style="width: 70%">
+    <StartGameButtonsComponent></StartGameButtonsComponent>
+    <DartBoardComponent></DartBoardComponent>
+    <CurrentThrowingRoundComponent></CurrentThrowingRoundComponent>
+</div>
+@* <DartPointsRowsComponent></DartPointsRowsComponent> *@
+
+@code
+{
+    [Inject] 
+    private ILogger<DartsGameStore> Logger { get; set; }
+
+    [Inject]
+    private DartsGameStore Store { get; set; }
+}

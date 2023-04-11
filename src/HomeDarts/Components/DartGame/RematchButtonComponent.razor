@@ -1,0 +1,26 @@
+@using HomeDarts.Domain
+@using HomeDarts.Domain.Stores
+
+@if (_finished)
+{
+    <MudButton @onclick="Rematch" Variant="Variant.Filled" Color="Color.Primary">
+    Rematch
+    </MudButton>   
+}
+
+@code {
+    [Inject] DartsGameStore Store { get; set; }
+
+    private bool _finished;
+    
+    protected override async Task OnInitializedAsync()
+    {
+        Store.Finished.Subscribe(finished =>
+        {
+            _finished = finished;
+            StateHasChanged();
+        });
+    }
+
+    private void Rematch() => Store.Rematch();
+}
