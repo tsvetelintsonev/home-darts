@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31717.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeDarts", "HomeDarts.csproj", "{A745BF49-2E42-44C2-BC6E-FF9568A38DCE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeDarts.Domain", "..\HomeDarts.Domain\HomeDarts.Domain.csproj", "{7054993A-C6B4-4C79-B010-2BD5DBE5A838}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A745BF49-2E42-44C2-BC6E-FF9568A38DCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A745BF49-2E42-44C2-BC6E-FF9568A38DCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A745BF49-2E42-44C2-BC6E-FF9568A38DCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7054993A-C6B4-4C79-B010-2BD5DBE5A838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7054993A-C6B4-4C79-B010-2BD5DBE5A838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7054993A-C6B4-4C79-B010-2BD5DBE5A838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7054993A-C6B4-4C79-B010-2BD5DBE5A838}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

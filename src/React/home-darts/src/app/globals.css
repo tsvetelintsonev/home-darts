@@ -1,0 +1,30 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.board {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.board > svg {
+  height: 620px;
+  width: 620px;
+}
+
+#dartboard #areas g path:hover,
+#dartboard #areas g circle:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+#dartboard #areas g path.dartboard-area-black:hover {
+  fill: #494949;
+}
+
+#dartboard #scores {
+  fill: var(--mud-palette-text-primary);
+}
