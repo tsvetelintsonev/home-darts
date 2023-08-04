@@ -32,7 +32,7 @@ jobs:
         run: |
           dotnet publish src/HomeDarts/HomeDarts.csproj -c:Release -p:GHPages=true -o dist/Web --nologo
           ls dist/Web
-          ls -la dist/Web/wwwroot
+          ls -la dist/Web/wwwroot/home-darts
 
       - name: Set base path to home-darts
         run: sed 's/base href="\/"/base href="\/home-darts\/"/' dist/Web/wwwroot/index.html
