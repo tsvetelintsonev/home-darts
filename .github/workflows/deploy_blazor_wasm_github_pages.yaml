@@ -32,15 +32,15 @@ jobs:
         run: |
           dotnet publish src/HomeDarts/HomeDarts.csproj -c:Release -p:GHPages=true -o dist/Web --nologo
 
-      - name: Set base path to home-darts
+      - name: Set base path to home-darts repo name
         run: |
-          sed 's/base href="\/"/base href="\/home-darts\/"/' dist/Web/wwwroot/home-darts/index.html
-          sed 's/href="app.css"/href="\/home-darts\/app.css"/' dist/Web/wwwroot/home-darts/index.html
-          sed 's/_content/\/home-darts\/_content/' dist/Web/wwwroot/home-darts/index.html
-          sed 's/_framework/\/home-darts\/_framework/' dist/Web/wwwroot/home-darts/index.html
+          sed 's/base href="\/"/base href="\/home-darts\/"/' dist/Web/wwwroot/index.html
+          sed 's/href="app.css"/href="\/home-darts\/app.css"/' dist/Web/wwwroot/index.html
+          sed 's/_content/\/home-darts\/_content/' dist/Web/wwwroot/index.html
+          sed 's/_framework/\/home-darts\/_framework/' dist/Web/wwwroot/index.html
 
       - name: Commit wwwroot to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           BRANCH: gh-pages
-          FOLDER: dist/Web/wwwroot/home-darts
+          FOLDER: dist/Web/wwwroot
