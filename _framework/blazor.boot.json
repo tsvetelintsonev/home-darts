@@ -7,8 +7,8 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "HomeDarts.dll": "sha256-ybCaJiHR3O73jemmgojOXsYO3IOyB335DV0K4y+FKog=",
-      "HomeDarts.Domain.dll": "sha256-lYEVWEbr3BDFFAke85MGJ17DCVyRR1Gv3dX16f9KACQ=",
+      "HomeDarts.dll": "sha256-AgYWz+CFvkCUJhnnJfQ1s2CDN89F4NvfG7tX4hXlpmY=",
+      "HomeDarts.Domain.dll": "sha256-8Ws5sRpvE2STNPbsk4NGsbnCkoadjUnknICrKsgHDNE=",
       "Microsoft.AspNetCore.Components.dll": "sha256-8MuXHFgiC7CQ8qRR6ndeN8cqqwgc0GjF\/Xq\/CkupHjo=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-3SUOUqqapHhh85LmDZm84Qreqcj3Gy5qHzOLd\/O2RZ8=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-NvRl9mqCb6CRxInDNg+bcRpx0KlzAvoge6Hi0e6QkW0=",
@@ -43,7 +43,7 @@
       "System.Private.CoreLib.dll": "sha256-dbqFJjWR54JbQpJPmwXI7NMNn1kYUs68GTeKx8e95II=",
       "System.Private.Uri.dll": "sha256-0leiJPT7F\/ayunLSjnezJGukMFb8HtRbkzljV8LkCxE=",
       "System.Reactive.dll": "sha256-K2wx37H8YBmkKgB+0OXgBXTebqDEf+0MooK\/O7J3Gww=",
-      "System.Runtime.dll": "sha256-61XaOfPZnZOu2oJMDjhMuEWrGBGqWTQgbeIJqJNTAM4=",
+      "System.Runtime.dll": "sha256-LDClxnsVuYtP+rWzi3Wf+jtfBWFY3y\/NP8WObKB1Fz8=",
       "System.Runtime.InteropServices.JavaScript.dll": "sha256-oC3ZknFt9cFMxRsiCApyk\/8TWTrDeZeuwdi\/ZypnYDY=",
       "System.Text.Encodings.Web.dll": "sha256-CkXO+YwS63Vtc9T55XjWsB+P1bD3YzChU4bTa\/MMJvs=",
       "System.Text.Json.dll": "sha256-xHP0TuJwTGR5dP6LW9NfQDJabM9W9V6lOm5z92ktVDo=",
