@@ -7,7 +7,7 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "HomeDarts.dll": "sha256-HTDgf1rb63G1JoAs7T9skpACvkhgDuf\/IWqHzn3gquo=",
+      "HomeDarts.dll": "sha256-ybCaJiHR3O73jemmgojOXsYO3IOyB335DV0K4y+FKog=",
       "HomeDarts.Domain.dll": "sha256-lYEVWEbr3BDFFAke85MGJ17DCVyRR1Gv3dX16f9KACQ=",
       "Microsoft.AspNetCore.Components.dll": "sha256-8MuXHFgiC7CQ8qRR6ndeN8cqqwgc0GjF\/Xq\/CkupHjo=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-3SUOUqqapHhh85LmDZm84Qreqcj3Gy5qHzOLd\/O2RZ8=",
