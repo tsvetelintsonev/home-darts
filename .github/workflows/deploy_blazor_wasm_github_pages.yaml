@@ -35,10 +35,10 @@ jobs:
           ls -la dist/Web/wwwroot/home-darts
 
       - name: Set base path to home-darts
-        run: sed 's/base href="\/"/base href="\/home-darts\/"/' dist/Web/wwwroot/index.html
+        run: sed 's/base href="\/"/base href="\/home-darts\/"/' dist/Web/wwwroot/home-darts/index.html
 
       - name: Commit wwwroot to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           BRANCH: gh-pages
-          FOLDER: dist/Web/wwwroot
+          FOLDER: dist/Web/wwwroot/home-darts
