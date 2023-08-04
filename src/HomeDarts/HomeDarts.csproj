@@ -4,6 +4,7 @@
 		<TargetFramework>net7.0</TargetFramework>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
+		<StaticWebAssetBasePath>home-darts</StaticWebAssetBasePath>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -23,6 +24,5 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\HomeDarts.Domain\HomeDarts.Domain.csproj" />
 	</ItemGroup>
-	
 	
 </Project>
